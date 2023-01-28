@@ -1,9 +1,12 @@
 
-let path = "/assets/style/"
+let path = "assets/style/"
 const btn = document.querySelector("#light-dark-button");
 const link = document.querySelector("#light-dark");
-
+if (/\/blogs\//.test(document.location.pathname)) {
+    path = "../assets/style/"
+}
 checkLightDark()
+
 function switchLightDark() {
     if (localStorage.getItem("dark-mode") === "true") {
         localStorage.setItem("dark-mode", "false");
