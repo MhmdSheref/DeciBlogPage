@@ -25,6 +25,7 @@ function checkLightDark () {
     }
 }
 
+
 let previousScrollY = scrollY;
 let header = document.querySelector("header")
 let hamMenu = document.querySelector("#ham-menu-hidden")
